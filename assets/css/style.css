@@ -1,0 +1,61 @@
+/* styling for index.html */
+.callout-container {
+    height: 100vh;
+
+    background: url('../images/Dominican-Republic/DR-1.jpeg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.jumbotron h1 {
+    color: #f3cf55;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 1em;
+}
+
+.jumbotron h2 {
+    color: #fbf2e3;
+    font-family: 'Yesteryear', sans-serif;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #f3cf55;
+}
+
+h2 {
+    font-family: 'Yesteryear', sans-serif;
+    color: #fbf2e3;
+}
+
+/* light pink color = #fbf2e3
+primrose yellow color = #f3cf55
+dark text color = #344345
+light blue color = #288ec2
+off white color = #ecf0f2
+ */

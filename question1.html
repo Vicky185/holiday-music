@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <title>Holiday music</title>
+
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+
+</head>
+<body>
+
+<div id="container">
+    <button id="start"> Let's Go!</button>
+
+    <form id="quiz"> <!--style="display: none"-->
+
+        <!--<div id="question"></div>
+        <div id="question-img"></div>
+        <div id="choices">-->
+        <h2>Where do you fancy exploring?</h2>
+        <!-- here are the choices for the first question. -->
+        <label> <input type="radio" name="q1" value="c1"> Africa </label>
+        <label> <input type="radio" name="q1" value="c2"> Asia </label>
+        <label> <input type="radio" name="q1" value="c3"> Australasia </label>
+        <label> <input type="radio" name="q1" value="c4"> Europe</label>
+        <label> <input type="radio" name="q1" value="c5"> North America </label>
+        <label> <input type="radio" name="q1" value="c6"> South America </label>
+
+        <h2> What do you fancy doing while you're there? </h2>
+        <label> <input type="radio" name="q2" value="c1"> Sightseeing and absorbing that culture </label>
+        <label> <input type="radio" name="q2" value="c2"> Going on an adventure! </label>
+        <label> <input type="radio" name="q2" value="c3"> Relaxing and going to the beach </label>
+        <label> <input type="radio" name="q2" value="c4"> Food. All the Food. </label>
+        <label> <input type="radio" name="q2" value="c5"> SPORTS. </label>
+        <label> <input type="radio" name="q2" value="c6"> I'm not sure, I just need to get away! </label>
+
+        <h2> What music will get you into the holiday mood? </h2>
+        <label> <input type="radio" name="q3" value="c1"> Indie </label>
+        <label> <input type="radio" name="q3" value="c2"> Pop </label>
+        <label> <input type="radio" name="q3" value="c3"> HipHop and RnB </label>
+        <label> <input type="radio" name="q3" value="c4"> Classic Rock </label>
+        <label> <input type="radio" name="q3" value="c5"> Latin </label>
+        <label> <input type="radio" name="q3" value="c6"> Afro-Beats </label>
+
+        <!--<button class="choice" name="A" value="1" id="choiceA" onclick="generateAnswer(answer1)">Europe</button>
+        <button class="choice" name="A" value="2" id="choiceB" onclick="generateAnswer(answer2)">North America
+        </button>
+        <button class="choice" name="A" value="3" id="choiceC" onclick="generateAnswer(answer3)">South America
+        </button>
+    </div>-->
+        <input type="submit" name="submit" id="submit" onclick="generateAnswer()">
+        <!--  <button type="reset" id="reset" onclick="resetQuiz()">Let's begin again</button> -->
+
+    </form>
+
+    <div id="answer"></div>
+
+    <!--
+        <div id="question"></div>
+        <div id="question-img"></div>
+        <div id="choices">
+            <button class="choice" name="B" value="1" id="choiceA" onclick="clickCounter()">Culture</button>
+            <button class="choice" name="B" value="2" id="choiceB" onclick="clickCounter()">Adventure</button>
+            <button class="choice" name="B" value="3" id="choiceC" onclick="clickCounter()">Relax</button>
+        </div>
+    -->
+
+
+    <!--   <div>
+           <p class="result" id="answer1" style="display: none"> You get London! </p>
+       </div>
+       <div>
+           <p class="result" id="answer2" style="display: none"> You get NYC! </p>
+       </div>
+       <div>
+           <p class="result" id="answer3" style="display: none"> You get Rio!</p>
+       </div>
+
+       <div id="scoreContainer" style="display: none"></div>
+   -->
+</div>
+
+
+<script src="assets/js/quiz2.js"></script>
+</body>
+</html>

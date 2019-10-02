@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap. min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,800,900|Prata|Roboto:300,300i,400,400i,500,500i,700,900|Yesteryear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <title>Holiday music</title>
+
+
+</head>
+<body>
+
+<header>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+            muSoul
+        </a>
+    </nav>
+</header>
+
+<div class="container-fluid callout-container">
+    <!-- Callout -->
+    <div class="opaque-overlay">&nbsp;</div>
+    <div class="col-12">
+        <section class="callout jumbotron text-center">
+            <h1> HOLIDAY </h1>
+            <h2> music </h2>
+        </section>
+    </div>
+</div>
+
+
+
+<div id="container">
+    <button id="start"> Let's Go!</button>
+
+    <form id="quiz"> <!--style="display: none"-->
+
+        <!--<div id="question"></div>
+        <div id="question-img"></div>
+        <div id="choices">-->
+        <h2>Where do you fancy exploring?</h2>
+        <!-- here are the choices for the first question. -->
+        <label> <input type="radio" name="q1" value="c1"> Africa </label>
+        <label> <input type="radio" name="q1" value="c2"> Asia </label>
+        <label> <input type="radio" name="q1" value="c3"> Australasia </label>
+        <label> <input type="radio" name="q1" value="c4"> Europe</label>
+        <label> <input type="radio" name="q1" value="c5"> North America </label>
+        <label> <input type="radio" name="q1" value="c6"> South America </label>
+
+        <h2> What do you fancy doing while you're there? </h2>
+        <label> <input type="radio" name="q2" value="c1"> Sightseeing and absorbing that culture </label>
+        <label> <input type="radio" name="q2" value="c2"> Going on an adventure! </label>
+        <label> <input type="radio" name="q2" value="c3"> Relaxing and going to the beach </label>
+        <label> <input type="radio" name="q2" value="c4"> Food. All the Food. </label>
+        <label> <input type="radio" name="q2" value="c5"> SPORTS. </label>
+        <label> <input type="radio" name="q2" value="c6"> I'm not sure, I just need to get away! </label>
+
+        <h2> What music will get you into the holiday mood? </h2>
+        <label> <input type="radio" name="q3" value="c1"> Indie </label>
+        <label> <input type="radio" name="q3" value="c2"> Pop </label>
+        <label> <input type="radio" name="q3" value="c3"> HipHop and RnB </label>
+        <label> <input type="radio" name="q3" value="c4"> Classic Rock </label>
+        <label> <input type="radio" name="q3" value="c5"> Latin </label>
+        <label> <input type="radio" name="q3" value="c6"> Afro-Beats </label>
+
+        <!--<button class="choice" name="A" value="1" id="choiceA" onclick="generateAnswer(answer1)">Europe</button>
+        <button class="choice" name="A" value="2" id="choiceB" onclick="generateAnswer(answer2)">North America
+        </button>
+        <button class="choice" name="A" value="3" id="choiceC" onclick="generateAnswer(answer3)">South America
+        </button>
+    </div>-->
+        <input type="submit" name="submit" id="submit" onclick="generateAnswer()">
+        <!--  <button type="reset" id="reset" onclick="resetQuiz()">Let's begin again</button> -->
+
+    </form>
+
+    <div id="answer"></div>
+
+    <!--
+        <div id="question"></div>
+        <div id="question-img"></div>
+        <div id="choices">
+            <button class="choice" name="B" value="1" id="choiceA" onclick="clickCounter()">Culture</button>
+            <button class="choice" name="B" value="2" id="choiceB" onclick="clickCounter()">Adventure</button>
+            <button class="choice" name="B" value="3" id="choiceC" onclick="clickCounter()">Relax</button>
+        </div>
+    -->
+
+
+    <!--   <div>
+           <p class="result" id="answer1" style="display: none"> You get London! </p>
+       </div>
+       <div>
+           <p class="result" id="answer2" style="display: none"> You get NYC! </p>
+       </div>
+       <div>
+           <p class="result" id="answer3" style="display: none"> You get Rio!</p>
+       </div>
+
+       <div id="scoreContainer" style="display: none"></div>
+   -->
+</div>
+
+
+<footer class="container-fluid ">
+    <div class="col-md-6">
+        <p>
+            <a class="uppercase general-sub footer-heading" target="_blank" href="#">Last.fm</a>
+        </p>
+    </div>
+    <div class="col-md-6">
+        <p class="uppercase general-sub footer-heading"> Share </p>
+        <ul class="list-inline social-links footer-text">
+            <li class="list-inline-item"><a target="_blank" href="/"><i class="fab fa-facebook-f border border-white" aria-hidden="true"></i><span class="sr-only"> </span></a></li>
+            <li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-twitter border border-white" aria-hidden="true"></i><span class="sr-only"> </span></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script src="assets/js/quiz2.js"></script>
+</body>
+</html>
